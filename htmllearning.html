@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning HTML</title>
+  <link rel="icon" href="HTML5_logo_and_wordmark.svg.png">
+  <link rel="stylesheet" href="htmllearningcss.css">
+  
+</head>
+<body>
+  <header>
+  <h1>Hello-World</h1>
+  <hr>
+  <h2>This is used to navigate the section within the page.</h2>
+  <ul>
+    <li><a href="#ch1">Chapter-1</a></li>
+    <li><a href="#ch2">Chapter-2</a></li>
+    <li><a href="#ch3">Chapter-3</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <hr>
+</header>
+<main>
+  <section id="ch1">
+  <h1>This is the tag for heading</h1>
+  <p>This is the tag for paragraphs</p>
+  <hr>
+  <h2>This is tag for heading1</h2>
+  <p>This is a tag for paragraph</p>
+  <p>This tag represents <em>Emphasized text</em>in this paragraph.</p>
+  <p>This is a <strong>Strong element</strong> it makes bold</p>
+  <hr>
+  <h3>To give spaces between the lines</h3>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we can use nbsp to leave the space.
+  </p>
+  <hr>
+</section>
+<section id="ch2">
+  <h3>To learn about list</h3>
+  <p>Now going to use unordered list</p>
+  <ul>
+    <li>Tea</li>
+    <li>Coffee</li>
+    <li>Milk</li>
+  </ul>
+  <p>Now going to use ordered List</p>
+  <ol>
+    <li>Rishi</li>
+    <li>Ram</li>
+    <li>Krishna</li>
+  </ol>
+  <p>Now we are going to use Description list</p>
+  <dl>
+    <dt>INDIA</dt>
+    <dd>It is a developing Country.</dd>
+
+    <dt>USA</dt>
+    <dd>It is a developed Country.</dd>
+  </dl>
+  <hr>
+</section>
+<section id="ch3">
+  <h2>HTML links</h2>
+  <a href="https://www.youtube.com/watch?v=tfN9gPFmUfA&t=1877s">Click this link to view</a>
+  <p>Using of abbrevation tag</p>
+  <p>I am Learning <abbr title="Hyper text Markup Language">HTML</abbr> from youtube.</p>
+  <hr>
+</section>
+<hr>
+<h2>Now we are going to add images to our html page</h2>
+<img src="pexels-pixabay-257360.jpg" alt="It is an image" title="My Image" width="300" height="300" loading="lazy">
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="pexels-christina-morillo-1181263.jpg" alt="Fvrt Image" widht="300" height="300"> -->
+<hr>
+<h2>Now we are going to use Figure</h2>
+<figure>
+  <img src="pexels-christina-morillo-1181263.jpg" alt="Fvrt Image" widht="300" height="300">
+  <figcaption>A Developers image</figcaption>
+</figure>
+<figure> 
+  <!-- figure can be used to represent code in out webpage -->
+  <figcaption>A HTML code sample</figcaption>
+  <code>
+    &lt;h1&gt;Hello-World&lt;h1&gt;
+  </code>
+</figure>
+<hr>
+<aside>
+  <details>
+    <summary>Guess the <mark>No.of hrs</mark> I code per day.</summary>
+    <p>I start at <time datetime="08:00">8am</time> and I write code for <time datetime="03:00">3 hrs</time> a day.</p>
+  </details>
+</aside>
+<hr>
+<h2>HTML Tables</h2>
+<table>
+  <thead>
+  <caption>My Daily Schedule</caption>
+  <tr>
+  <th> </th>
+  <th>Time</th>
+  <th>Schedule</th>
+  </thead>
+  <tbody>
+</tr>
+  <tr>
+    <th>Morning</th>
+    <td>8am-11am</td>
+    <td>Write code</td>
+  </tr>
+  <tr>
+    <th>Afternoon</th>
+    <td>11am-6pm</td>
+    <td>Work</td>
+  </tr>
+  <tr>
+    <th>Evening</th>
+    <td>6pm-8pm</td>
+    <td>Gym</td>
+  </tr>
+</tbody>
+<tfoot>
+ <tr>
+    <th>Evening-II</th>
+    <td rowspan="2">All other time</td>
+    <td>Playing cards</td>
+  </tr>
+  <tr>
+    <th>Night</th>
+    <td>Sleep</td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align: center;">Free-time</td>
+  </tr>
+</tfoot>
+</table>
+<hr>
+<h2>HTML Forms and Inputs</h2>
+<!-- fieldset gives u the borders of the form -->
+<!-- to give name use Legend -->
+
+<section id="contact">
+  <h2>Contact-me</h2>
+  <p>I would like to hear from you.</p>
+  <form action="https://httpbin.org/get",method=get>
+    <fieldset>
+      <legend>Personal-Info</legend>
+    <p>
+    <label for="firstName">First-Name:</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter your Name" autocomplete="on" required>
+  </p>
+    <!-- id and label for names should be same -->
+    <!-- autofoucs- If the site loads straightly the cursor goes in that element.
+         autocomplete=on - This means the value will be changed.
+         required - without enetering the information in that field next process cant be done. -->
+         <p>
+         <label for="lastName">Last-Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter your Name" autocomplete="on">
+  </p>
+  <p>
+  <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+ </p>
+  <p>
+        <label for="phone">phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder=" Ex:+919999999999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  </p>
+  <p>
+    <label for="content">favourite-Content</label>
+    <select name="content" id="content">
+      <optgroup label="Technology">
+      <option value="Front-End">Front-End</option>
+      <option value="Back-End">Back-End</option>
+    </optgroup>
+    <optgroup label="Others">
+      <option value="DevOps">DevOps</option>
+      <option value="AI" selected>AI</option>
+    </optgroup>
+    </select>
+  </p>
+</fieldset>
+  </form>
+</section>
+<hr>
+<section>
+  <fieldset>
+    <legend>
+      Your Fvrt Food
+    </legend>
+    <p>
+      <!-- Radio Buttons -->
+      <input type="radio" name="food" id="Chicken">
+      <label for="Chicken">Chicken</label><br>
+      <input type="radio" name="food" id="Mutton">
+      <label for="Mutton">Mutton</label><br>
+      <input type="radio" name="food" id="Fish">
+      <label for="Fish">Fish</label><br>
+      <input type="radio" name="food" id="Beef">
+      <label for="Beef">Beef</label><br>
+    
+  </p>
+  </fieldset>
+</section>
+<hr>
+<section>
+  <fieldset>
+    <legend>
+      Your Fvrt Dish
+    </legend>
+    <p>
+      <!-- check Boxes -->
+      <input type="checkbox" name="food" id="Chicken">
+      <label for="Chicken">Chicken</label><br>
+      <input type="checkbox" name="food" id="Mutton">
+      <label for="Mutton">Mutton</label><br>
+      <input type="checkbox" name="food" id="Fish">
+      <label for="Fish">Fish</label><br>
+      <input type="checkbox" name="food" id="Beef">
+      <label for="Beef">Beef</label><br>
+    
+  </p>
+  </fieldset>
+</section>
+
+<!-- To write a message -->
+
+<section>
+  <fieldset>
+    <legend>Send me a note.</legend>
+    <label for="message">Your Message</label>
+    <p>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message">
+    </textarea>
+    </p>
+ </fieldset>
+  
+</section>
+<button type="submit">Submit</button>
+</main>
+<footer>
+<h2>This is used to navigate to the starting of the page</h2>
+<nav>
+  <a href="#">Back to top.</a>
+</nav>
+<hr>
+</footer>
+  
+</body>
+</html>
